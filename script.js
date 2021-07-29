@@ -5,6 +5,7 @@ const length = document.getElementById('length')
 const color = document.querySelector('#color')
 const search_btn = document.querySelector('#search')
 const paragraph = document.querySelector('#text')
+const reset_btn = document.querySelector("#reset")
 
 // define more constants and variables here
 let showAuthor = false
@@ -40,5 +41,9 @@ search_btn.onclick = () => {
       }
       paragraph.appendChild(span)
     })
+}
+
+reset_btn.onclick = () => {
+  paragraph.innerHTML = text
 }
 // more codes for Search and Reset buttons here
